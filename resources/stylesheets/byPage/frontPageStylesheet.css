@@ -1,0 +1,337 @@
+/*
+	
+	Youth Music Monterey County 
+	/resources/stylesheets/byPage/frontPageStylesheet.css
+	
+	made with ♥ kelly wong -
+	# instagram @kelly.gif
+	# github /kellywongs
+	# kellywwong@icloud.com
+	
+	© 2017
+	
+*/
+
+/*
+	notes:
+	
+	- contains styling for elements specific to the front page, so:
+		- the opening card and parallax
+		- the information cards
+		- typography for elements here (mostly just the YOUTH MONTEREY thing)
+		- action buttons, but not the general behavior - just the location
+		NOT
+		- navigation
+		- social icons
+		- the footer
+*/
+
+/* 
+	------ TYPOGRAPHY ------
+*/
+
+#openingCard-ymm { /* big title 'YOUTH MUSIC MONTEREY COUNTY' (is also an h1) 
+	- white, regular weight applied to 'youth music' bc 'monterey county' changes those properties
+	- uppercase and close together */
+	color: white;
+	font-weight: 400;
+	font-size: 50px;
+	text-transform: uppercase;
+	line-height: 0.9;
+}
+
+#openingCard-ymm-emphasis { /* the 'MONTEREY COUNTY' in 'YOUTH MUSIC MONTEREY COUNTY' 
+	- bolded and slightly brown? */
+	font-weight: 700;
+	color: #d3c1b4;
+}
+
+
+#openingCard-tagline { /* 'Building the next generation of musicians and music lovers.'
+	- color is black specifically because all other h3s are brown, yeah i know im sorry 
+	- should note actually that 'musicians' and 'music lovers' is wrapped in a 'blueThings' <span> that makes them blue, like in case you forget i guess*/
+	color: black;
+}
+
+#openingCard-descriptor { /* 'Youth Music Monterey County supports two orchestras...' on the opening card */
+	font-weight: 400; /* 'regular' font weight */
+}
+
+#openingCard-button a { /* The text on the opening card button; a on:hover property further down changes the color to royal blue */
+	text-transform: uppercase;
+	font-family: 'Muli', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	color: gray;
+	text-decoration: none;
+}
+
+#openingCard-button:hover a {
+	color: #327d96;
+}
+
+#openingCard-button a:hover {
+	color: #1d5e74;
+}
+
+/* 
+	------ OPENING CARD ------
+ */
+ 
+#openingBlock { /* block with logo, title, and opening card:
+	- width is set a little bit more (10px atm) than the nav width, and is centered, so this block aligns with the nav
+	- not visibly, obviously, the card is offset and the logo/title more so, but it changes the way they behave when the screen changes */
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#openingCard-ymmAndLogo { /* the block with the logo and the title:
+	- fades in
+	- height of container is 250px, flex display, pushed to the right 10% of the screen and kept at 50% from the bottom */
+
+	/* fades in the title and the logo */ 
+    -webkit-animation: fadein 4s;
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s;
+         -o-animation: fadein 4s;
+            animation: fadein 4s;
+
+	height: 250px; /* this also controls how large the ymm logo is, which is set to 100% of the height of the container */ 
+	display: flex; /* prev. inline-flex, idk why */ 
+	position: absolute;
+	
+	bottom: 43%;
+	margin-left: -120px;
+
+	z-index: 3;
+}
+
+@keyframes fadein { /* don't actually know what this does but it works */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#openingCard-logo {	/* the huge ymm logo on the front:
+	- all 'height:100%' does is set the height to 100% of the container, which is #openingCard-ymmAndLogo and 250px. that way when or if i change the logo size, nothing breaks too badly. */
+	height: 100%;
+}
+
+#openingCard-ymm { /* 'YOUTH MUSIC MONTEREY COUNTY':
+	- there's a <Br> in the html separating 'youth music' from 'monterey county'. better, i think, than the old solution which was to set a margin-right such that it wrapped to the right place. 
+	- the position:relative makes it so that all these properties alter relatively to its position, which is next to the ymm - for example, the margin-left: 20px moves it 20px away from the ymm.
+	- turned off wrapping. 
+	- top:19% moves it down 19% from the top of the ymm container so it's more or less aligned with the mm - no way as of yet to do this without eyeballing it. */
+	position: relative;
+	white-space: nowrap;
+	margin-left: 20px;
+	top: 19%;
+}
+
+#openingCard { /* opening card:
+	- absolutely positioned 50% from the top
+	- also slightly opaque, consider changing it to translucency  */
+	top: 50%;
+	position: absolute;
+	
+	padding: 30px; /* there's intrinsic padding on the top and the bottom of the h3, but it doesn't really look that great with that removed */
+	border-radius: 10px;
+	max-width: 400px;
+	
+	background-color: rgba(255, 255, 255, 0.87);
+	box-shadow: -2px 29px 52px rgba(0, 0, 0, 0.39);
+	
+	z-index: 2;
+}
+
+
+#openingCard-ymm-emphasis { /* MONTEREY COUNTY in case you want to do anything with it that isn't typography related */
+
+}
+
+#openingCard-tagline { /* 'Building the next generation...':
+	- wanted to have more of a margin than the description that isn't just wrapping, but it doesn't look like that's working out very well */
+	margin-right: 10%;
+}
+
+#openingCard-descriptor { /* the description on the opening card */
+	
+}
+
+#openingCard-button { /* the LEARN MORE button on the opening card */
+	width: 150px;
+	height: 20px;
+	border: 1px solid gray;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0);
+	
+	padding: 10px;
+	
+	text-align: center;
+	
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+#openingCard-button:hover { /* learn more hover effects:
+	- really nice big dramatic box shadow, although apparently it's not as fast as ::before */
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	border: 1px solid #1d5e74;
+	
+	cursor: pointer;
+}
+
+
+/* 
+	------ PARALLAX ------
+*/
+
+#parallaxBackgroundTop {  /* styles the parallaxBackgroundTop div */
+    background-image: url("resources/images/widescreen/2.jpg"), url("../../images/widescreen/2.jpg");
+
+    height: 100%; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center center; /* 'center center' keeps the entire image centered as opposed to... not doing that */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    
+}
+
+/* 
+	------ INFORMATION CARDS ------
+ */
+
+#informationCardBlock { /* the block with News, Events, and action/social buttons:
+	- separated from the parallax image by 5% and centered */
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	display: flex;
+}
+
+.ellipticalShadow { /* the shadow on the hr */
+	position: relative;
+	top: -30px;
+	height: 20px;
+}
+
+.ellipticalShadow:before { /* more code for the shadow on the hr that i copied and pasted from somewhere */
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(155,155,0, 0.25);
+	border-radius: 50% / 20px; 
+	box-shadow: 0px 0px 10px rgba(49, 49, 49, 0.7);
+	clip: rect(20px, auto, 50px, 0);
+	z-index: 5;
+}
+
+.informationContent { /* the content in the news/events modules
+	- the margin-top pulls it up a little so the text disappears right under the hr */
+	margin-top: -30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 400px;
+
+	overflow: scroll; /* iMpOrTaNt to let all content that doesn't fit overflow */
+}
+
+#informationCardBlock h3 { /* News and Events 
+	- aligns the title with the text in the box */
+	margin-left: 9px;
+}
+
+.informationCard { /* each card
+	- 40% width of the container, pushes the thing next to it to the right */
+	width: 40%;
+	margin-right: 3%;
+}
+
+.informationCard ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 5px;
+}
+
+
+
+#informationCards-news { /* the news card specifically */
+
+}
+
+#informationCards-events { /* the events card specifically */
+
+}
+
+.informationCard .entry { /* an entry on News */
+	display: flex;
+	
+}
+
+
+.informationCard .images { /* images in News */
+	width: 110px;
+	height: 110px;
+	margin-right: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.informationCard .desc {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.informationCard .title { /* titles in News */
+	font-weight: 700; 
+}
+
+#informationCards-news .date, .time { /* date of an entry in News */
+	color: gray;
+	font-style: italic;
+}
+
+#informationCards-events .date { /* date of an entry in events */
+	font-size: 160%;
+	color: gray;
+}
+
+
+.informationCard .elsewhereLink { /* the little >> */
+	margin-left: 50%;
+	font-size: 150%;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.informationCard ul li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 10px 0px;
+}
+
+/* 
+	------ BUTTONS ------
+ */
+
+.mainActionButtons { /* why did i call them 'action buttons'?? 
+	- pushes the row of buttons down 70px to align with the hr, possibly find another way to do this without resorting to this */
+	margin-top: 64px;
+}
+
+.mainSocialButtons { /* main social button block: 
+	- centered */
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	width: 187px;
+}
+
+

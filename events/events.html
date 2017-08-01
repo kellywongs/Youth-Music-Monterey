@@ -1,0 +1,263 @@
+<!--
+	
+	Youth Music Monterey County 
+	/events/events.html
+	
+	© Kelly Wong 2017
+	
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Events # Youth Music Monterey</title>
+		
+	<!-- 
+		things to import: 
+	--> 
+	<!-- google fonts --> <!-- <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet"> -->
+	<!-- fontawesome --> <script src="https://use.fontawesome.com/59154a48fe.js"></script>
+	<!-- 
+		stylesheets: 
+	--> 
+	<!-- general template --><link rel="stylesheet" href='../resources/stylesheets/byPage/generalTemplate.css'>
+	<!-- general stylesheet --><link rel="stylesheet" href='../resources/stylesheets/stylesheet.css'>
+	<!-- front page stylesheet for events --><link rel="stylesheet" href='../resources/stylesheets/byPage/frontPageStylesheet.css'>
+	
+	<meta charset="UTF-8">
+	<meta name="description" content="Building the next generation of musicians and music lovers. Led by Maestro Farkhad Khudyev, Youth Music Monterey County supports two orchestras, a chamber music program, and in-school teaching and performance opportunities throughout Monterey County.">
+	<meta name="keywords" content="Monterey, Seaside, Marina, Carmel, Carmel by the Sea, Pebble Beach, MPUSD, South County, music program, youth, youth orchestra, violin, viola, cello, bass, flute, wind, strings, brass, instruments, county">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		
+		#calendar {
+			margin-top: 30px;
+			width: 700px;
+			height: 600px;
+			border: 0;
+		}
+		
+		#informationCards-events ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		
+		#informationCards-events li {
+			display: flex;
+		}
+		
+		#informationCards-events img {
+			position: relative;
+			height: 100px;
+			width: 100px;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-right: 10px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	<div id="navigation">
+		<a href="../index.html"><img src="../resources/images/logo-white-small.png" id="topLogo" alt="Home"></a>
+		<div class="navigation-bar">
+			<div class="dropdownMenu dropdownMenu-Events">
+			<a href="../events/events.html" class="dropdownText">Events</a>
+				<div class="dropdownContent">
+					<ul>
+						<li><a href="../events/news.html" class="dropdownLink">News</a></li>
+						<li><a href="../events/tickets.html" class="dropdownLink">Tickets</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdownMenu dropdownMenu-Programs">
+			<a href="../programs/programs.html" class="dropdownText">Programs</a>
+				<div class="dropdownContent">
+					<ul>
+						<li><a href="../programs/orchestras.html" class="dropdownLink">Orchestras</a></li>
+						<li><a href="../programs/chamber-players.html" class="dropdownLink">Chamber Players</a></li>
+						<li><a href="../programs/brass-choir.html" class="dropdownLink">Brass Choir</a></li>
+						<li><a href="../programs/woodwind-ensemble.html" class="dropdownLink">Woodwind Ensemble</a></li>
+						<li><a href="../programs/south-county-strings.html" class="dropdownLink">South County Strings</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdownMenu dropdownMenu-Involved">
+			<a href="../get-involved/get-involved.html" class="dropdownText">Get Involved</a>
+				<div class="dropdownContent">
+					<ul>
+						<li><a href="../get-involved/audition.html" class="dropdownLink">Audition</a></li>
+						<li><a href="../get-involved/register.html" class="dropdownLink">Register</a></li>
+						<li><a href="../get-involved/become-an-angel.html" class="dropdownLink">Become an Angel</a></li>
+						<li><a href="..//get-involved/volunteer.html" class="dropdownLink">Volunteer</a></li>
+						<li><a href="../get-involved/donate.html" class="dropdownLink">Donate</a></li>
+						<li><a href="../get-involved/advertise.html" class="dropdownLink">Advertise</a></li>
+						<li><a href="../get-involved/private-lessons.html" class="dropdownLink">Private Lessons</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdownMenu dropdownMenu-Members">
+			<a href="../members/members.html" class="dropdownText">Members</a>
+				<div class="dropdownContent">
+					<ul>
+						<li><a href="../members/orchestras.html" class="dropdownLink">Orchestras</a></li>
+						<li><a href="../members/chamber-players.html" class="dropdownLink">Chamber Players</a></li>
+						<li><a href="../members/south-county-strings.html" class="dropdownLink">South County Strings</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdownMenu dropdownMenu-About">
+			<a href="../about/about.html" class="dropdownText">About</a>
+				<div class="dropdownContent">
+					<ul>
+						<li><a href="../about/staff.html" class="dropdownLink">Staff</a></li>
+						<li><a href="../about/contact.html" class="dropdownLink">Contact</a></li>
+						<li><a href="../about/alumni.html" class="dropdownLink">Alumni</a></li>
+						<li><a href="../about/board-of-directors.html" class="dropdownLink">Board of Directors</a></li>
+						<li><a href="../about/employment.html" class="dropdownLink">Employment</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="navSearchBar">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 
+		-------------- ~ PAGE SPECIFICS ~ --------------
+	-->
+	
+	<div id="headerImage"></div>
+	
+	<div class="content">
+				
+		<h3>Upcoming Events</h3>
+		<ul id="informationCards-events">
+			<!-- - keep 6 links max up
+				template:
+				<li class="entry">
+					<img src="resources/images/news/placeholder.png" title="ALT" class="images">
+					<p class="desc">
+					<a href="events/news/link.html" title="TITLE" class="title">
+						TITLE
+					</a><Br>
+					<span class="date">
+						DATE
+					</span><br>
+						DESC
+					</p>
+				</li>
+			-->
+			
+			<li class="entry">
+			
+				<img src="../resources/images/events/escheresque.png" alt="Auditions">
+			
+				<p class="desc">
+				<span class="date">
+					08.08.2017
+				</span><br>
+				<a href="events/events/2017-08-16%20Auditions.html" title="2017-08-16: Auditions" class="title">
+					Auditions</a><br>
+				<span class="time">
+					4:00 PM - 8:00 PM
+				</span>
+				<br>
+					Auditions are scheduled for August 16th.
+				</p>
+			</li>
+			
+			<li class="entry">
+			
+				<img src="../resources/images/events/flowers.png" alt="First Orchestra rehearsal">
+			
+				<p class="desc">
+				<span class="date">
+					08.23.2017
+				</span><br>
+				<a href="events/events/2017-08-23%20First%20Orchestra%20rehearsal.html" title="2017-08-23: First Orchestra rehearsal" class="title">
+					First Orchestra rehearsal</a><br>
+				<span class="time">
+					4:30 PM - 8:30 PM
+				</span>
+				<br>
+					First rehearsal of the 2017-2018 season
+				</p>
+			</li>
+			
+			<li class="entry">
+			
+				<img src="../resources/images/events/cartographer.png" alt="Honors Concerto Competition">
+			
+				<p class="desc">
+				<span class="date">
+					10.29.2017
+				</span><br>
+				<a href="events/events/2017-10-29%20Honors%20Concerto%20Competition.html" title="2017-10-29: Honors Concerto Competition" class="title">
+					Honors Concerto Competition</a><br>
+				<span class="time">
+					2:30 PM - 5:00 PM
+				</span>
+				<br>
+					Honors Concerto Competition
+				</p>
+			</li>
+		</ul>
+		
+		<iframe src="https://calendar.google.com/calendar/embed?title=Youth%20Music%20Monterey%20County&amp;showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FLos_Angeles" id="calendar"></iframe>
+	</div>
+	
+	<!-- 
+		-------------- ~ END PAGE SPECIFICS ~ --------------
+	-->
+	
+	<div id="footer">
+		<div id="footerContent">
+		<div id="footer-contactUs">
+			<h4>Contact Us</h4>
+			<p>Youth Music Monterey County<br>
+				546 Hartnell Street, Suite B<br>
+				Monterey, CA 93940<br>
+				<a href="mailto:office@youthmusicmonterey.org">office@youthmusicmonterey.org</a><br>
+				<a href="tel:1-831-375-1992">831 375 1992</a></p>
+		</div>
+		
+		<div id="footer-sponsoredBy">
+			<h4>Sponsored By</h4>
+			<a href="http://kmozart.com/home/index-m.aspx" target="_blank"><img src="../resources/images/k-mozart-logo-blue.png" alt="kMozart 95.1 FM - The Central Coast's Classical Station" id="footer-sponsoredBy-logo"></a>
+		</div>
+		
+
+		<ul id="footer-linkBlock">
+			<li><a href="../events/events.html" title="Events" class="footer-links">Events</a></li>
+			<li><a href="../programs/programs.html" title="Programs" class="footer-links">Programs</a></li>
+			<li><a href="../get-involved/get-involved.html" title="Get Involved" class="footer-links">Get Involved</a></li>
+			<li><a href="../members/members.html" title="Members" class="footer-links">Members</a></li>
+			<li><a href="../about/about.html" title="About" class="footer-links">About</a></li>
+			<li><a href="../sitemap.html" title="Sitemap" class="footer-links">Sitemap</a></li>
+		</ul>
+
+		
+		<div id="footer-socialBlock" class="socialButtons">
+			<div class="social social-1"><a href="http://www.facebook.com/youthmusicmonterey" title="Facebook" target="_blank"><i class="fa fa-facebook socialIcons" aria-hidden="true"></i></a></div>
+			<div class="social social-2"><a href="https://plus.google.com/110995317864564482040" title="Google+" target="_blank"><i class="fa fa-google-plus socialIcons" aria-hidden="true"></i></a></div>
+			<div class="social social-3"><a href="http://www.twitter.com/YMMorch" title="Twitter" target="_blank"><i class="fa fa-twitter socialIcons" aria-hidden="true"></i></a></div>
+			<div class="social social-2"><a href="http://www.youtube.com/youthmusicmontere" title="YouTube" target="_blank"><i class="fa fa-youtube-play socialIcons" aria-hidden="true"></i></a></div>
+			<div class="social social-1"><a href="https://www.instagram.com/youthmusicmonterey/" title="Instagram" target="_blank"><i class="fa fa-instagram socialIcons" aria-hidden="true"></i></a></div>
+		</div>
+		
+		<div id="footer-copyright">
+			<p>© Youth Music Monterey County 2017. All rights reserved.</p>
+			<!-- Built with love by Kelly Wong. -->
+		</div>
+		</div>
+	</div>
+</body>
+
+</html>

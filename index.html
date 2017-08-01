@@ -1,0 +1,113 @@
+<!--
+	
+	Youth Music Monterey County 
+	/index.html
+	
+	made with ♥ kelly wong -
+	# instagram @kelly.gif
+	# github /kellywongs
+	# kellywwong@icloud.com
+	
+	© 2017
+	
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<script src="resources/jquery-3.2.1.min.js"></script>
+
+
+	<script> 
+		$(function(){	
+		$("#meta").load("elements/meta.html"); 
+		$("#header").load("elements/header.html"); 
+		$("#footer").load("elements/footer.html"); 
+		$("#News").load("elements/news/2017-winter.html");
+		$("#Events").load("elements/events/2017-winter.html");
+		$("#SocialBlock").load("elements/social.html");
+	});
+	</script> 
+
+	<title>Youth Music Monterey</title>
+	<base id="meta" href="">
+	
+	<!-- specific to this front page stylesheet --><link rel="stylesheet" href='resources/stylesheets/byPage/frontPageStylesheet.css'>
+	<!-- general stylesheet --> <link rel="stylesheet" href='resources/stylesheets/stylesheet.css'>
+	
+</head>
+
+<body>	
+	<div id="header"></div>
+
+	<!-- 
+		ANYWAYS THIS IS THE BEGINNING OF THE PAGE
+	-->
+	
+	<div id="openingBlock">
+	<div id="openingCard-ymmAndLogo">
+		<img src="resources/images/logo-white.png" alt="Youth Music Monterey County" id="openingCard-logo">
+		<h1 id="openingCard-ymm">Youth Music <br><span id="openingCard-ymm-emphasis">Monterey County</span></h1>
+	</div>
+		
+	<div id="openingCard">
+		<h3 id="openingCard-tagline">Building the next generation of <span>musicians</span> and <span>music lovers</span>.</h3>
+		<h4 id="openingCard-descriptor">Youth Music Monterey County supports two <a href="programs/orchestras.html" title="Orchestras" class="brownLink">orchestras</a>, a <a href="programs/chamber-players.html" title="Chamber Players" class="brownLink">chamber music program</a>, and in-school teaching and performance opportunities throughout Monterey County.</h4>
+		<div id="openingCard-button"><a href="programs/programs.html" title="Programs">Learn More</a></div>
+	</div>
+	</div>
+	
+	<div id="parallaxBackgroundTop"></div>
+	
+	<div id="informationCardBlock">
+		
+		<!-- NEWS -->
+		<div id="informationCards-news" class="informationCard">
+			<h3><a href="events/news.html" title="News">News</a></h3>
+			<div class="ellipticalShadow"></div>
+			<div class="informationContent">
+				<div id="News"></div>
+				<a href="events/news.html" title="Older News" class="elsewhereLink">»</a>
+			</div>
+		</div>
+		
+		<!-- EVENTS -->
+		<div id="informationCards-events" class="informationCard">
+			<h3><a href="events/events.html" title="Events">Events</a></h3>
+			<div class="ellipticalShadow"></div>
+			
+			<div class="informationContent">
+				<div id="Events"></div>
+				<a href="events/news.html" title="Older News" class="elsewhereLink">»</a>
+			</div>
+		</div>
+		
+		<div class="mainActionButtons">
+			
+			<div class="actionButton" id="actionButton-Programs"><a href="programs/programs.html" title="Programs"><span>Programs</span></a></div>
+			<div class="actionButton" id="actionButton-Members"><a href="members/members.html" title="Members"><span>Members</span></a></div>
+			<div class="actionButton" id="actionButton-Donate"><a href="donatedDonate.html" title="Donate"><span>Donate</span></a></div>
+			
+			<div class="mainSocialButtons"><div id="SocialBlock"></div></div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<h2>About Us</h2>
+		<p>Programs offered include the <a href="programs/orchestras.html" title="Learn more about the Orchestras">Junior and Honors Orchestras</a> led by Maestro Farkhad Khudyev, the <a href="programs/chamber-players.html" title="Learn more about the Chamber Players">Chamber Players</a>, the <a href="programs/brass-choir.html" title="Learn more about the Brass Choir">Brass Choir</a>, the <a href="programs/woodwind-ensemble.html" title="Learn more about the Woodwind Ensemble">Woodwind Ensemble</a>, and the <a href="programs/south-county-strings.html" title="Learn more about the South County Strings">South County Strings</a>.
+		<br><br>
+		Praesent eget fringilla magna, a blandit est. Nullam varius turpis felis, vitae sodales nunc euismod ut. Ut vel nunc leo. Nam tincidunt nulla sit amet sem pulvinar venenatis. Nulla viverra leo ac metus congue condimentum. Donec risus tortor, ultrices et nibh in, luctus bibendum purus. Nunc maximus dolor nec faucibus consectetur. Sed aliquam sodales turpis non commodo. Vestibulum sit amet luctus lectus. Donec sed tellus ac mi pellentesque ultrices. Suspendisse potenti. Praesent eu massa sagittis, malesuada dolor dictum, rutrum dui. Vivamus gravida vitae justo ut dapibus. Ut maximus consequat eros, sit amet ornare felis volutpat nec.
+		</p>
+	</div>
+	
+	<!-- 
+		ANYWAYS THIS IS THE END OF THE PAGE
+	-->
+	
+	<div id="footer"></div>
+</body>
+
+</html>

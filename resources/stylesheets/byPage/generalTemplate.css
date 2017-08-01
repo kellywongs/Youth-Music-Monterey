@@ -1,0 +1,59 @@
+/*
+	
+	Youth Music Monterey County 
+	/resources/stylesheets/byPage/generalTemplate.css
+	
+	© Kelly Wong 2017
+	
+*/
+
+/*
+	notes:
+	
+	
+*/
+
+#headerImage {  /* styles the navbar image div */
+    background-image: url("../../resources/images/widescreen/2.jpg"), url("../../images/widescreen/2.jpg"), url("resources/images/widescreen/2.jpg");
+
+    height: 80px; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center bottom; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    
+}
+
+h3 {
+	margin-right: 30%;
+}
+
+table {
+	margin-left: 5%;
+	width: 400px;
+}
+
+table tr td {
+	padding-right: 5%;
+}
+
+.parallaxImage {
+	
+	height: 300px;
+	width: 100%;
+	
+	background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+	outline: 1px solid white;
+	outline-offset: -5px;
+    
+	position: relative;
+}
+
