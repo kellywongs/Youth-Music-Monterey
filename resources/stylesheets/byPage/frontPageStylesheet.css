@@ -304,8 +304,10 @@
 	color: gray;
 }
 
-#informationCardBlock-events img {
+#informationCardBlock #Events ul li img {
 	display: none;
+	width: 0;
+	height: 0;
 }
 
 .informationCard .elsewhereLink { /* the little >> */
