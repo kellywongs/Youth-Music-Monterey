@@ -1,109 +1,50 @@
+<!DOCTYPE html>
+
 <!--
 	
 	Youth Music Monterey County 
 	/about/about.html
 	
-	© Kelly Wong 2017
+	made with ♥ kelly wong -
+	# instagram @kelly.gif
+	# github.com/kellywongs/Youth-Music-Monterey
+	# kellywwong@icloud.com
+	
+	© 2017
 	
 -->
-
-<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-	<title>About # Youth Music Monterey</title>
-		
-	<!-- 
-		things to import: 
-	--> 
-	<!-- google fonts --> <!-- <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet"> -->
-	<!-- fontawesome --> <script src="https://use.fontawesome.com/59154a48fe.js"></script>
-	<!-- 
-		stylesheets: 
-	--> 
-	<!-- general template --><link rel="stylesheet" href='../resources/stylesheets/byPage/generalTemplate.css'>
-	<!-- general stylesheet --><link rel="stylesheet" href='../resources/stylesheets/stylesheet.css'>
 	
-	<meta charset="UTF-8">
-	<meta name="description" content="Building the next generation of musicians and music lovers. Led by Maestro Farkhad Khudyev, Youth Music Monterey County supports two orchestras, a chamber music program, and in-school teaching and performance opportunities throughout Monterey County.">
-	<meta name="keywords" content="Monterey, Seaside, Marina, Carmel, Carmel by the Sea, Pebble Beach, MPUSD, South County, music program, youth, youth orchestra, violin, viola, cello, bass, flute, wind, strings, brass, instruments, county">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base id="meta" href="../" />
+	<script src="resources/jquery-3.2.1.min.js"></script>
+	
+	<script> 
+		$(function(){	
+		$("#meta").load("elements/meta.html"); 
+		$("#header").load("elements/header.html"); 
+		$("#footer").load("elements/footer.html"); 
+		$("#News").load("elements/news/2017-winter.html");
+		$("#Events").load("elements/events/2017-winter.html");
+		$("#SocialBlock").load("elements/social.html");
+	});
+	</script> 
+	
+	<title>About # Youth Music Monterey</title>
+	
+	<!-- general template --><link rel="stylesheet" href='resources/stylesheets/byPage/generalTemplate.css'>
+	<!-- general stylesheet --><link rel="stylesheet" href='resources/stylesheets/stylesheet.css'>
 </head>
 
 <body>
 	
-	<div id="navigation">
-		<a href="../index.html"><img src="../resources/images/logo-white-small.png" id="topLogo" alt="Home"></a>
-		<div class="navigation-bar">
-			<div class="dropdownMenu dropdownMenu-Events">
-			<a href="../events/events.html" class="dropdownText">Events</a>
-				<div class="dropdownContent">
-					<ul>
-						<li><a href="../events/news.html" class="dropdownLink">News</a></li>
-						<li><a href="../events/tickets.html" class="dropdownLink">Tickets</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="dropdownMenu dropdownMenu-Programs">
-			<a href="../programs/programs.html" class="dropdownText">Programs</a>
-				<div class="dropdownContent">
-					<ul>
-						<li><a href="../programs/orchestras.html" class="dropdownLink">Orchestras</a></li>
-						<li><a href="../programs/chamber-players.html" class="dropdownLink">Chamber Players</a></li>
-						<li><a href="../programs/brass-choir.html" class="dropdownLink">Brass Choir</a></li>
-						<li><a href="../programs/woodwind-ensemble.html" class="dropdownLink">Woodwind Ensemble</a></li>
-						<li><a href="../programs/south-county-strings.html" class="dropdownLink">South County Strings</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="dropdownMenu dropdownMenu-Involved">
-			<a href="../get-involved/get-involved.html" class="dropdownText">Get Involved</a>
-				<div class="dropdownContent">
-					<ul>
-						<li><a href="../get-involved/audition.html" class="dropdownLink">Audition</a></li>
-						<li><a href="../get-involved/register.html" class="dropdownLink">Register</a></li>
-						<li><a href="../get-involved/become-an-angel.html" class="dropdownLink">Become an Angel</a></li>
-						<li><a href="..//get-involved/volunteer.html" class="dropdownLink">Volunteer</a></li>
-						<li><a href="../get-involved/donate.html" class="dropdownLink">Donate</a></li>
-						<li><a href="../get-involved/advertise.html" class="dropdownLink">Advertise</a></li>
-						<li><a href="../get-involved/private-lessons.html" class="dropdownLink">Private Lessons</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="dropdownMenu dropdownMenu-Members">
-			<a href="../members/members.html" class="dropdownText">Members</a>
-				<div class="dropdownContent">
-					<ul>
-						<li><a href="../members/orchestras.html" class="dropdownLink">Orchestras</a></li>
-						<li><a href="../members/chamber-players.html" class="dropdownLink">Chamber Players</a></li>
-						<li><a href="../members/south-county-strings.html" class="dropdownLink">South County Strings</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="dropdownMenu dropdownMenu-About">
-			<a href="../about/about.html" class="dropdownText">About</a>
-				<div class="dropdownContent">
-					<ul>
-						<li><a href="../about/staff.html" class="dropdownLink">Staff</a></li>
-						<li><a href="../about/contact.html" class="dropdownLink">Contact</a></li>
-						<li><a href="../about/alumni.html" class="dropdownLink">Alumni</a></li>
-						<li><a href="../about/board-of-directors.html" class="dropdownLink">Board of Directors</a></li>
-						<li><a href="../about/employment.html" class="dropdownLink">Employment</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="navSearchBar">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</div>
-		</div>
-	</div>
+	<div id="header"></div>
 	
 	<!-- 
 		-------------- ~ PAGE SPECIFICS ~ --------------
 	-->
-	
-	<div id="headerImage"></div>
 	
 	<div class="content">
 		
@@ -116,19 +57,19 @@
 		<table>
 			<tr>
 				<td>1981-1984</td>
-				<td><a href="maestros/maestro-stewart-robertson.html" title="Maestro Stewart Robertson">Maestro Stewart Robertson</a></td>
+				<td><a href="about/maestros/maestro-stewart-robertson.html" title="Maestro Stewart Robertson">Maestro Stewart Robertson</a></td>
 			</tr>
 			<tr>
 				<td>1984-1992</td>
-				<td><a href="maestros/maestro-vince-gomez.html" title="Maestro Vince Gomez">Maestro Vince Gomez</a></td>
+				<td><a href="about/maestros/maestro-vince-gomez.html" title="Maestro Vince Gomez">Maestro Vince Gomez</a></td>
 			</tr>
 			<tr>
 				<td>1992-2012</td>
-				<td><a href="maestros/maestro-john-larry-granger.html" title="Maestro John Larry Granger">Maestro John Larry Granger</a></td>
+				<td><a href="about/maestros/maestro-john-larry-granger.html" title="Maestro John Larry Granger">Maestro John Larry Granger</a></td>
 			</tr>
 			<tr>
 				<td>2012-present</td>
-				<td><a href="maestros/maestro-farkhad-khudyev.html" title="Maestro Farkhad Khudyev">Maestro Farkhad Khudyev</a></td>
+				<td><a href="about/maestros/maestro-farkhad-khudyev.html" title="Maestro Farkhad Khudyev">Maestro Farkhad Khudyev</a></td>
 			</tr>
 		</table>
 		
@@ -145,7 +86,7 @@
 		<p>To inspire excellence in individual students and enrich our community by providing young people with opportunities to participate in, and gain greater understanding of, music and its performance.</p>
 		
 		<div class="imageWithCaption">
-			<div class="parallaxImage" style="background-image: url('../resources/images/shots/may8-honors-choirs.jpg');"></div>
+			<div class="parallaxImage" style="background-image: url('resources/images/shots/may8-honors-choirs.jpg');"></div>
 			<p class="caption">May 8, 2016: Youth Music Monterey performs with York School's Choir and Chamber Choir</p>
 		</div>
 		
@@ -166,47 +107,7 @@
 		-------------- ~ END PAGE SPECIFICS ~ --------------
 	-->
 	
-	<div id="footer">
-		<div id="footerContent">
-		<div id="footer-contactUs">
-			<h4>Contact Us</h4>
-			<p>Youth Music Monterey County<br>
-				546 Hartnell Street, Suite B<br>
-				Monterey, CA 93940<br>
-				<a href="mailto:office@youthmusicmonterey.org">office@youthmusicmonterey.org</a><br>
-				<a href="tel:1-831-375-1992">831 375 1992</a></p>
-		</div>
-		
-		<div id="footer-sponsoredBy">
-			<h4>Sponsored By</h4>
-			<a href="http://kmozart.com/home/index-m.aspx" target="_blank"><img src="../resources/images/k-mozart-logo-blue.png" alt="kMozart 95.1 FM - The Central Coast's Classical Station" id="footer-sponsoredBy-logo"></a>
-		</div>
-		
-
-		<ul id="footer-linkBlock">
-			<li><a href="../events/events.html" title="Events" class="footer-links">Events</a></li>
-			<li><a href="../programs/programs.html" title="Programs" class="footer-links">Programs</a></li>
-			<li><a href="../get-involved/get-involved.html" title="Get Involved" class="footer-links">Get Involved</a></li>
-			<li><a href="../members/members.html" title="Members" class="footer-links">Members</a></li>
-			<li><a href="../about/about.html" title="About" class="footer-links">About</a></li>
-			<li><a href="../sitemap.html" title="Sitemap" class="footer-links">Sitemap</a></li>
-		</ul>
-
-		
-		<div id="footer-socialBlock" class="socialButtons">
-			<div class="social social-1"><a href="http://www.facebook.com/youthmusicmonterey" title="Facebook" target="_blank"><i class="fa fa-facebook socialIcons" aria-hidden="true"></i></a></div>
-			<div class="social social-2"><a href="https://plus.google.com/110995317864564482040" title="Google+" target="_blank"><i class="fa fa-google-plus socialIcons" aria-hidden="true"></i></a></div>
-			<div class="social social-3"><a href="http://www.twitter.com/YMMorch" title="Twitter" target="_blank"><i class="fa fa-twitter socialIcons" aria-hidden="true"></i></a></div>
-			<div class="social social-2"><a href="http://www.youtube.com/youthmusicmontere" title="YouTube" target="_blank"><i class="fa fa-youtube-play socialIcons" aria-hidden="true"></i></a></div>
-			<div class="social social-1"><a href="https://www.instagram.com/youthmusicmonterey/" title="Instagram" target="_blank"><i class="fa fa-instagram socialIcons" aria-hidden="true"></i></a></div>
-		</div>
-		
-		<div id="footer-copyright">
-			<p>© Youth Music Monterey County 2017. All rights reserved.</p>
-			<!-- Built with love by Kelly Wong. -->
-		</div>
-		</div>
-	</div>
+	<div id="footer"></div>
 </body>
 
 </html>
