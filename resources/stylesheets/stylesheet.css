@@ -44,20 +44,20 @@ h1 { /* header 1 font:
 
 h2 { /* header 2 font:
 	'About' */
-	color: #1d5e74;
+	color: #7e624e;
 	font-size: 190%; /* font size adjustment is more for semantics than anything else */
 	
 }
  
 h3 { /* header 3 font:
 	'News', the opening card tagline */
-	color: #7e624e;
+	color: #1d5e74;
 	font-size: 150%;
 
 }
 
 h3 a { /* 'News' and 'Events' - removes link stylings */
-	color: #7e624e;
+	color: #1d5e74;
 	text-decoration: none;
 }
 
@@ -76,12 +76,12 @@ h4 { /* header 4 font:
 
 a { /* normal links:
 	- royal blue */
-	color: #1d5e74;
+	color: #7e624e;
 }
 
 a:hover { /* normal hovering links:
 	- turns a light shade of brown */
-	color: #573f2d;
+	color: #327d96;
 }
 
 a:visited :not(#navigation) :not(#footer) :not(.socialButtons) { /* normal visited links:
@@ -119,12 +119,12 @@ a:active { /* normal links being pressed:
 .dropdownMenu:hover .dropdownText { /* what happens to the dropdown text when you hover over the dropdown menu block?
 	-  well it turns a slightly browner shade of white 
 	- there used to be an animation here but not anymore */
-	color: #DEC9BA;
+	color: #7bb6ca;
 }
 
 .dropdownMenu .dropdownText:hover { /* important: indicate that the dropdown text is ALSO a link!
 	-  atm it turns a darker shade of brown and the cursor turns into a pointer when rolling over the text specifically */
-	color: #C4A086;
+	color: #7dc6de;
 }
 
 .dropdownContent { /* dropdown menu links:
@@ -313,7 +313,7 @@ a:active { /* normal links being pressed:
 
 .dropdownContent li a:hover { /* look of hovered link in menu:
 	- background color is blue and the font changes to white */
-    background-color: #1c5c72;
+    background-color: #7e624e;
     color: white;
 }
 
@@ -342,15 +342,15 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 /* the row of action buttons creates a gradient */
 
 #actionButton-Programs { /* Programs: */
-	background-color: #1c5c72;
+	background-color: #573f2d;
 }
 
 #actionButton-Members { /* Members: */
-	background-color: #497c8e;
+	background-color: #7e624e;
 }
 
 #actionButton-Donate { /* Donate: */
-	background-color: #769daa;
+	background-color: #ae8d75;
 }
 
 .actionButton span { /* >> */
@@ -379,7 +379,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 
 .social { /* social buttons: */
 	border: none;
-	background-color: #978171;
+	background-color: #327d96;
 	text-align: center;
 	
 	border-radius: 50%;
@@ -487,7 +487,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 	
 	/* also try: escheresque.png, flowers.png, xv.png, skulls.png, cartographer with #277b97 */
 	
-	background-color: #1d5e74;
+	background-color: #7e624e;
 	background-image: url("../resources/images/footerPatterns/skulls.png"), url("resources/images/footerPatterns/skulls.png"), url("../images/footerPatterns/skulls.png");
 }
 
@@ -542,7 +542,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 
 #footer-socialBlock .social { /* social icons for footer (that other social rules haven't already covered, like shape):
 	- changes background color for this band of social icons */
-	background-color: #769daa;
+	background-color: #573f2d;
 } 
 
 #footer-socialBlock .social:hover { /* on hover for social icons:
