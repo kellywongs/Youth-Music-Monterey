@@ -1,26 +1,26 @@
 /*
-	
-	Youth Music Monterey County 
+
+	Youth Music Monterey County
 	/resources/stylesheets/stylesheet.css
-	
+
 	made with ♥ kelly wong -
 	# instagram @kelly.gif
 	# github.com/kellywongs/Youth-Music-Monterey
 	# kellywwong@icloud.com
-	
+
 	© 2017
-	
+
 */
 
 /*
 	notes:
-	
+
 	- this is the general stylesheet of the YMM page, including:
 		- navigation
 		- the little bar of social things
 		- the footer
 		- general typography
-		- action button 
+		- action button
 */
 
 body, html { /* i honestly have no idea why this works but it's the only thing keeping the front page from falling apart */
@@ -28,13 +28,13 @@ body, html { /* i honestly have no idea why this works but it's the only thing k
     margin: 0;
 }
 
-/* 
+/*
 	------ TYPOGRAPHY ------
 */
 
 body { /* body font:
 	- Muli just like everything else, fallback on Helvetica Neue */
-	font-family: 'Muli', 'Helvetica Neue', sans-serif; 
+	font-family: 'Muli', 'Helvetica Neue', sans-serif;
 }
 
 h1 { /* header 1 font:
@@ -46,9 +46,9 @@ h2 { /* header 2 font:
 	'About' */
 	color: #1d5e74;
 	font-size: 190%; /* font size adjustment is more for semantics than anything else */
-	
+
 }
- 
+
 h3 { /* header 3 font:
 	'News', the opening card tagline */
 	color: #7e624e;
@@ -63,7 +63,7 @@ h3 a { /* 'News' and 'Events' - removes link stylings */
 
 h4 { /* header 4 font:
 	'Youth Music Monterey supports two orchestras...' on the opening card; footer labels */
-	
+
 }
 
 .caption {
@@ -85,7 +85,7 @@ a:hover { /* normal hovering links:
 }
 
 a:visited :not(#navigation) :not(#footer) :not(.socialButtons) { /* normal visited links:
-	- stays dark brown 
+	- stays dark brown
 	- the :not(#navigation) applies this to everything except the nav, the footer, and the social buttons - probably try to find a more elegant solution in the future */
 	color: #7e624e;
 }
@@ -95,12 +95,12 @@ a:active { /* normal links being pressed:
 	color: #433023;
 }
 
-.blueThings { /* things that are blue, currently being used for emphasis on the opening card and even that's a little iffy 
+.blueThings { /* things that are blue, currently being used for emphasis on the opening card and even that's a little iffy
 	- they are blue */
 	color: #1d5e74;
 }
 
-.brownLink { /* links that need browning on the outset (eg opening card links) - hover/active follows the styling of normal links 
+.brownLink { /* links that need browning on the outset (eg opening card links) - hover/active follows the styling of normal links
 	- they are brown */
 	color: #7e624e;
 }
@@ -117,7 +117,7 @@ a:active { /* normal links being pressed:
 }
 
 .dropdownMenu:hover .dropdownText { /* what happens to the dropdown text when you hover over the dropdown menu block?
-	-  well it turns a slightly browner shade of white 
+	-  well it turns a slightly browner shade of white
 	- there used to be an animation here but not anymore */
 	color: #DEC9BA;
 }
@@ -133,16 +133,16 @@ a:active { /* normal links being pressed:
 	text-decoration: none;
 }
 
-.dropdownContent a:hover { /* dropdown menu links when hovered over - this is slightly misleading because the properties are changed, just a little further down in the nav section. 
+.dropdownContent a:hover { /* dropdown menu links when hovered over - this is slightly misleading because the properties are changed, just a little further down in the nav section.
 	- the links turn white as the rest of the block turns blue. */
-	
+
 }
 
 .actionButton {
 	text-align: center;
 }
 
-.actionButton a { /* Programs, Members, and Donate 
+.actionButton a { /* Programs, Members, and Donate
 	- bold italics */
 	font-family: 'Muli', sans-serif;
 	font-style: italic;
@@ -173,7 +173,7 @@ a:active { /* normal links being pressed:
 	text-decoration: none;
 }
 
-#footer-copyright { /* footer copyright text: 
+#footer-copyright { /* footer copyright text:
 	- light gray and is small */
 	font-size: smaller;
 	color: #c3c3c3;
@@ -185,7 +185,7 @@ a:active { /* normal links being pressed:
 }
 
 
-/* 
+/*
 	------ NAVIGATION ------
 */
 
@@ -195,13 +195,13 @@ a:active { /* normal links being pressed:
 	- no idea why it's so impossible to center this (or anything) horizontally */
 	position: absolute;
 	width: 630px; /* apparently necessary to get the thing to center, but noted that the block is left justified within the 630px */
-	
+
 	left: 0;
 	right: 0;
 	margin-top: 20px; /* separates the bar from the top of the screen by 2% */
-	margin-left: auto; 
+	margin-left: auto;
 	margin-right: auto;
-  
+
 	z-index: 50;
 }
 
@@ -214,7 +214,7 @@ a:active { /* normal links being pressed:
 .navigation-bar { /* the block where the navigation bar is:
 	- block display */
 	display: block;
-	
+
 	margin-top: -46px; /* pulls the top margin up to be in line with the ymm */
 	margin-left: 75px;
 }
@@ -222,10 +222,10 @@ a:active { /* normal links being pressed:
 #navSearchBar { /* the little search function on the nav bar:
 	- currently nonfunctional, but at least it's inline */
 	display: inline;
-	
+
 	margin-left: 1%;
 	color: white;
-	
+
 	cursor: pointer;
 }
 
@@ -235,24 +235,24 @@ a:active { /* normal links being pressed:
 	margin-bottom: 10px;
 }
 
-.dropdownMenu { /* the entire dropdown menu incl. the dropdown text and content: 
+.dropdownMenu { /* the entire dropdown menu incl. the dropdown text and content:
 	- relatively positioned
-	- padding on top and bottom 10px 
+	- padding on top and bottom 10px
 	- pointy cursor! */
     position: relative;
     display: inline-block;
     padding: 10px 2%;
-	
+
     z-index: 4;
 }
 
-/* not an especially elegant solution, but it works... 
-	
-	changes all the heights from 0 to the specified height, which obviously changes every time you change the padding and size of the menu. current buttons are exactly 50 px tall, so probably not a good idea to change them anyways. 
+/* not an especially elegant solution, but it works...
+
+	changes all the heights from 0 to the specified height, which obviously changes every time you change the padding and size of the menu. current buttons are exactly 50 px tall, so probably not a good idea to change them anyways.
 */
 
 .dropdownMenu-Events:hover .dropdownContent {
-    height: 100px; 
+    height: 100px;
 }
 
 .dropdownMenu-Programs:hover .dropdownContent {
@@ -272,7 +272,7 @@ a:active { /* normal links being pressed:
 }
 
 .dropdownContent { /* dropdown content:
-	- absolutely positioned underneath the text 
+	- absolutely positioned underneath the text
 	- also there's a slight box shadow to add dimension
 	- the menu background is slightly opaque, thinking of changing to translucency but it's probably not worth the effort */
     position: absolute;
@@ -281,7 +281,7 @@ a:active { /* normal links being pressed:
     background-color: rgba(255,  255,  255, 0.95);
 
     z-index: 3;
-    
+
     overflow: hidden;
     height: 0; /* this sets the height to 0, invisible, until hover. below this is just a bunch of stuff for different browsers. */
     -webkit-transition:height 200ms ease-in;
@@ -297,7 +297,7 @@ a:active { /* normal links being pressed:
 }
 
 .dropdownLink { /* re: dropdown link text specifically, a lot of which is changed in the following css */
-	
+
 }
 
 .dropdownContent li a { /* look of individual links:
@@ -306,7 +306,7 @@ a:active { /* normal links being pressed:
 	- the "display: block;" is necessary for some reason, probably just converts all the links to blocks instead of inline?? */
     display: block;
     padding: 15px;
-    
+
     color: #000;
     text-decoration: none;
 }
@@ -324,7 +324,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* 
+/*
 	------ BUTTONS ------
  */
 
@@ -381,15 +381,17 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 	border: none;
 	background-color: #978171;
 	text-align: center;
-	
+
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
 	margin: 2px;
 	display: inline-flex;
-	-webkit-transition-duration: 0.3s ease-in-out; 
+	-webkit-transition-duration: 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-} 
+
+  
+}
 
 .social a { /* the social links:
 	-  vertically and horizontally centered, white*/
@@ -403,15 +405,15 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 /*
 .social-1 {
 	background-color: #978171;
-} 
+}
 
 .social-2 {
 	background-color: #8a715f;
-} 
+}
 
 .social-3 {
 	background-color: #7e624e;
-} 
+}
 */
 
 .socialIcons { /* the icons themselves */
@@ -441,7 +443,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 }
 */
 
-/* 
+/*
 	------ CONTENT ------
  */
 
@@ -458,22 +460,22 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 	color: #606060;
 }
 
-/* 
+/*
 	------ FOOTER ------
  */
 
 #footer { /* footer: */
-	
+
 /* structure to turn the background into parallax if you want */
 
 /*
 	display: flex;
 	position: relative;
-	
+
 	background-color: #2f5b70;
 	background-image: url(https://www.transparenttextures.com/patterns/dark-circles.png);
 
-    height: 24%; 
+    height: 24%;
     width: 94%;
 
     background-attachment: fixed;
@@ -484,14 +486,14 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 	position: relative;
 	z-index: 0;
 	margin: 0;
-	
+
 	/* also try: escheresque.png, flowers.png, xv.png, skulls.png, cartographer with #277b97 */
-	
+
 	background-color: #1d5e74;
 	background-image: url("../resources/images/footerPatterns/skulls.png"), url("resources/images/footerPatterns/skulls.png"), url("../images/footerPatterns/skulls.png");
 }
 
-#footerContent { 
+#footerContent {
 	padding: 3%;
 	display: flex;
 	width: 760px;
@@ -502,7 +504,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 
 
 #footer-contactUs { /* 'Contact Us' at the bottom of the page */
-	
+
 }
 
 #footer-sponsoredBy { /* Sponsored By:
@@ -543,7 +545,7 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 #footer-socialBlock .social { /* social icons for footer (that other social rules haven't already covered, like shape):
 	- changes background color for this band of social icons */
 	background-color: #769daa;
-} 
+}
 
 #footer-socialBlock .social:hover { /* on hover for social icons:
 	- turns darker blue */
@@ -556,18 +558,18 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 
 /* This stuff to make the buttons different will stay if you ever want to change that */
 
-/*	
+/*
 #footer-socialBlock .social-1 {
 	background-color: #769daa;
 }
 
 #footer-socialBlock .social-2 {
 	background-color: #769daa;
-} 
+}
 
 #footer-socialBlock .social-3 {
 	background-color: #769daa;
-} 
+}
 */
 
 
@@ -576,9 +578,11 @@ hr { /* just hrs should you ever need them - used in the news/events cards */
 	bottom: 10px;
 	left: 0px;
 	right: 0px;
-	
+
 	text-align: center;
 	line-height: 0.2;
+
+
 }
 
 #footer-copyright a {
